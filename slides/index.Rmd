@@ -1,7 +1,7 @@
 ---
 title: 'A Realistic Guide to Making Data Available Alongside Code to Improve Reproducibility.'
 author: "<span style = 'font-size: 90%;'>Nicholas Tierney, Monash University <br> & <br> Karthik Ram, Berkeley Institute of Data Science, UC Berkeley</span>"
-date: "<span style = 'font-size: 90%;'>NUMBAT <br><br> Friday 17th January, 2020 </span> <br><br> `r #icon::fa('link')` [LINK]() <br><br>`r #icon::fa('twitter')` [nj_tierney](https://twitter.com/nj_tierney)"
+date: "<span style = 'font-size: 90%;'>NUMBAT <br><br> Friday 17th January, 2020 </span> <br><br> `r #icon::fa('link')` [talk link](https://njt-numbat-data.netlify.com/#1) <br><br>`r #icon::fa('twitter')` [nj_tierney](https://twitter.com/nj_tierney)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -16,7 +16,7 @@ output:
 
 
 layout: true
-<div class="my-footer"><span>bit.ly/LINK • @nj_tierney</span></div> 
+<div class="my-footer"><span>njt-numbat-data.netlify.com/ • @nj_tierney</span></div> 
 
 ```{r setup, include=FALSE}
 # options(htmltools.dir.version = FALSE, width = 120)
@@ -816,7 +816,7 @@ Some example data journals:
 .large[
 `r icon::fa_newspaper() ` [paper (released soon)](https://github.com/karthik/ddd)
 
-`r icon::fa('link')` [talk]()
+`r icon::fa('link')` [talk](https://njt-numbat-data.netlify.com/#1)
 
 `r icon::fa_twitter()` nj_tierney
 
