@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
   <head>
-    <title>Awesome title</title>
+    <title>A Realistic Guide to Making Data Available Alongside Code to Improve Reproducibility.</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Nicholas Tierney, Monash University" />
+    <meta name="author" content="Nicholas Tierney, Monash University   &amp;   Karthik Ram, Berkeley Institute of Data Science, UC Berkeley" />
     <script src="libs/jquery-1.11.3/jquery.min.js"></script>
     <script src="libs/elevate-section-attrs-2.0/elevate-section-attrs.js"></script>
     <link href="libs/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
@@ -15,12 +15,12 @@
     <textarea id="source">
 class: left, middle, inverse, title-slide
 
-# Awesome title
-## subtitle
-### <span style="font-size: 90%;">Nicholas Tierney, Monash University</span>
-### <span style="font-size: 90%;">CONFERENCE <br><br> MONDAY 1st January, 1920 </span> <br><br> <a href="">LINK</a> <br><br> <a href="https://twitter.com/nj_tierney">nj_tierney</a>
+# A Realistic Guide to Making Data Available Alongside Code to Improve Reproducibility.
+### <span style="font-size: 90%;">Nicholas Tierney, Monash University <br> &amp; <br> Karthik Ram, Berkeley Institute of Data Science, UC Berkeley</span>
+### <span style="font-size: 90%;">NUMBAT <br><br> Friday 17th January, 2020 </span> <br><br> <a href="">LINK</a> <br><br> <a href="https://twitter.com/nj_tierney">nj_tierney</a>
 
 ---
+
 
 
 layout: true
@@ -35,55 +35,654 @@ layout: true
 
 
 ---
+
+.large[
+&gt; "Data! data! data!" he cried impatiently. "I can't make bricks without clay." 
+
+&gt; --Sherlock Holmes (The Adventure of the Copper Beeches by Sir Arthur Conan Doyle)
+] 
+
+
+---
 class: inverse, middle, center
 
-# Intro
+.large[
+This talk represents work that is currently in progress with Karthik Ram: 
+
+**"A Realistic Guide to Making Data Available Alongside Code to Improve Reproducibility"**
+
+_Any feedback and questions would be much appreciated!_
+]
+
+---
+class: inverse, middle, center
+
+# We need data
+
+--
+
+We need it to do our job
+
+--
+
+(though not strictly true for theory, but you get what I mean)
 
 ---
 
-# Background
+# Benefits of Sharing data
+
+.large[
+🔍  Makes work transparent 
+
+✅ Increases trust 
+
+🔈 Increases visibility
+
+<i class="fas  fa-microscope "></i> Independent validation
+
+♻️ Reproducibility 
+]
+
+
+---
+class: middle, invert, center
+
+# Research isn't often shared
+
+It's often really available to the authors
 
 ---
 
-Put More slides here.
+# Rowhani-Farid &amp; Barnett, 2016
+
+.large[
+Out of 160 randomly sampled BMJ papers
+
+3 included data in the paper
+
+Only 7/157 research articles shared their data sets
+
+For 21 clinical trials bound by the BMJ data sharing policy, 24% shared data
+]
+---
+
+# Stodden, Seiler and Ma, 2018
+
+.large[
+_Science_ made clause for Authors to provide data with papers
+
+Authors compared 204 papers before and after clause for reproducibility
+]
+---
+
+# Stodden, Seiler and Ma, 2018
+
+&lt;img src="img/stodden-table-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Stodden, Seiler and Ma, 2018
+
+
+.large[
+
+😞
+
+&gt; When you approach a PI for the source codes and raw data, you better
+explain who you are, whom you work for, why you need the data and
+what you are going to do with it.
+]
+
+---
+
+# Stodden, Seiler and Ma, 2018
+
+.large[
+😢
+
+&gt; I have to say that this is a very unusual request without any explanation! Please ask your supervisor to send me an email with a detailed,
+and I mean detailed, explanation.
+]
+
+---
+
+# Stodden, Seiler and Ma, 2018
+
+.large[
+
+😭
+
+&gt; We do not typically share our internal data or code with people outside our collaboration.
+
+]
+
+---
+
+# Stodden, Seiler and Ma, 2018
+
+.large[
+
+😞
+
+&gt; The code we wrote is the accumulated product of years of effort
+by [redacted] and myself. Also, the data we processed was collected
+painstakingly over a long period by collaborators, and so we will need
+to ask permission from them too.
+]
+
+---
+
+# Stodden, Seiler and Ma, 2018
+
+.large[
+😢
+
+&gt; Normally we do not provide this kind of information to people we do
+not know. It might be that you want to check the data analysis, and
+that might be of some use to us, but only if you publish your findings
+while properly referring to us.
+
+]
+
+---
+
+# Stodden, Seiler and Ma, 2018
+
+.large[
+😿
+
+&gt; Thank you for your interest in our paper. For the [redacted] calculations I used my own code, and there is no public version of this code,
+which could be downloaded. Since this code is not very user-friendly
+and is under constant development I prefer not to share this code
+
+]
+
+---
+
+# Stodden, Seiler and Ma, 2018
+
+.large[
+🎉
+
+&gt; Our program [redacted] is available here [URL redacted] (documentation and tutorials were included)
+]
+
+
+---
+
+# Stodden, Seiler and Ma, 2018
+
+.large[
+🎉
+
+&gt; If you go to [URL redacted], under the publications, I have a link
+to the gitHub repository. I don’t know if I have all of the raw simulated data, but I certainly have the processed data used to make the
+plots. What do you need? All of the simulated data could of course
+be regenerated from the code.
+]
+
+---
+
+# Stodden, Seiler and Ma, 2018
+
+.large[
+🎉
+&gt; Please find attached a .zip file called [redacted].zip that has the custom MATLAB [redacted] analysis code. If you run Masterrunfigureone.m this will generate several panels from the paper.
+]
+
+---
+
+# Stodden, Seiler and Ma, 2018
+
+.large[
+🎉
+&gt; In the next email I will enclose the custom image analysis software.
+This can also be accessed from [URL redacted] where there is a manual and tutorial.
+] 
+
+---
+
+# Sharing data?
+
+.large[
+Plenty of research that tells you it is important to share data
+
+And that data sharing should be FAIR (findable, Accessible, Interoperable, and Reusable)
+
+But these don't actually tell you how to do share data
+]
+
+---
+
+# Why not share data?
+
+.large[
+There are indeed good reasons to not share data:
+
+1. Privacy concerns (e.g., human subjects, locations of critically endangered species)
+
+1. May put the authors at a competitive disadvantage ( but data can be embargoed for reasonable periods of time)
+]
+
+---
+
+# Why not share data?
+
+.large[
+"If you can't do something right, don't do it"
+
+- This ^^ is wrong - you should at least provide something!
+
+- Sharing data (in most cases) has a net positive benefit
+]
+
+---
+
+# How to think about sharing data
+
+.large[
+
+It shouldn't be a wall or a mountain that we need to climb. These require special tools, and knowledge of how to use them.
+
+It should instead be an "on-ramp"
+
+**This talk should hopefully get you started**
+
+]
+
+---
+
+# The on ramp to sharing data
+
+.medium[
+1. Analysis ready data: Final data used in analysis
+1. README: A Human readable description of the data
+1. Data dictionary: Human readable dictionary of data contents
+1. Raw data: The original/first data provided
+1. Scripts: To clean raw data ready for analysis
+1. License: How to use and share the data
+1. Citation: How you want your data to be cited
+1. Machine readable meta data: Make your data searchable
+]
+---
+
+# Analysis ready data: Final data used in analysis
+
+.left-code[
+```
+project 
+└── data
+    └── crime.csv
+```
+]
+
+--
+
+.right-plot[
+- Dataset(s) in the form used in analysis.
+- e.g., data used in a linear regression.
+- Ideally, it would be "tidy data" form.
+- Plain-text format, `.csv`, `.tsv`, `.txt`
+- Binary / proprietary formats are discouraged, since they require special software (although these can go into a `data-raw` file - to be discussed)
+- e.g., don't use `.rda`, `.rds`, `.sav`, `.dta`, `.sas7bdat`.
+]
+
+---
+
+# README: A Human readable description of the data
+
+.left-code[
+```
+project 
+├── data
+|   └── crime.csv
+└── README.md
+```
+]
+
+.right-plot[
+- Guides the reader/user to how to understand this directory.
+- Handy when there are no reliable standards
+- Top level of the data repository, (optionally for each dataset)
+- Contains the who, what, when, where, why, of your data.
+- `.md` allows you to take advantage of markdown - making it easy to insert lists, tables, and links.
+]
+
+
+---
+
+
+# Data dictionary: Human readable dictionary of data contents
+
+.left-code[
+```
+project 
+├── data
+│   ├── crime.csv
+│   └── crime-dictionary.csv 
+└── README.md
+```
+]
+
+.right-plot[
+- Human readable description, context, and structure of the data
+- Helps familiarise user with data
+- It should contain:
+  - **variable names**
+  - **variable labels**
+  - **variable codes**, and
+  - special values for **missing data**
+]
+
+---
+
+# Data Dictionary: Human readable dictionary of data contents
+
+&lt;img src="figures/print-table-1.png" width="936" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Raw data: The original/first data provided
+
+.left-code[
+```
+project 
+├── data
+│   ├── crime.csv
+│   └── crime-dictionary.csv 
+├── data-raw
+│   └── crime-raw.dat
+└── README.md
+```
+]
+
+.right-plot[
+- usually first format of data provided before any tidying or cleaning. 
+- **If the raw data is a practical size to share**, it should be shared in a folder called `data-raw`. 
+- Should be in the form that was first received, even if it is in binary or some proprietary format.  
+- Option to include data dictionaries of the raw data can be provided in `data-raw`.
+]
+
+---
+
+# Scripts: To clean raw data ready for analysis
+
+.left-code[
+```
+project 
+├── data
+│   ├── crime.csv
+│   └── crime-dictionary.csv 
+├── data-raw
+│   ├── crime-raw.dat
+│   ├── clean-crime.R
+│   └── other-steps.md
+└── README.md
+```
+]
+
+.right-plot[
+
+- Code used to clean and tidy the raw data. 
+- Ideally involves only scripted languages
+- If other practical steps were taken to clean up the data, these should be recorded in a plain text or markdown file.
+
+]
+
+---
+
+# License: How to use and share the data
+
+.left-code[
+```
+project 
+├── data
+│   ├── crime.csv
+│   └── crime-dictionary.csv 
+├── data-raw
+│   ├── crime-raw.dat
+│   ├── clean-crime.R
+│   └── other-steps.md
+├── README.md
+└── LICENSE
+```
+]
+
+.right-plot[
+
+- Data + license clearly establishes how everyone to modify, use, and share data. 
+- Two licenses that are well suited for data sharing are:
+
+1. CCBY: enforce attribution and credit required, no warranty.
+2. CC0: public domain. No ownership or warranty
+
+- Provide a LICENSE or LICENSE.md file with entire license in the top level of directory.
+]
+
+
+---
+
+# Citation: How you want your data to be cited
+
+.left-code[
+```
+project 
+├── data
+│   ├── crime.csv
+│   └── crime-dictionary.csv 
+├── data-raw
+│   ├── crime-raw.dat
+│   ├── clean-crime.R
+│   └── other-steps.md
+├── README.md (reference DOI)
+├── CITATION
+└── LICENSE
+```
+]
+
+.right-plot[
+
+- A Digital Object Identifier (DOI) uniquely + permanently identifies a digital object ( paper, poster, or software)
+- DOIs are minted by repositories like Dryad or Zenodo for free.
+- Put the DOI in a reference format like BibTex (zenodo does this for you)
+]
+
+---
+
+# Citation: example
+
+```
+@software{housing-data,
+  author       = {Nicholas Tierney},
+  title        = {njtierney/melb-housing-data: Added LICENSE.md file},
+  month        = feb,
+  year         = 2019,
+  publisher    = {Zenodo},
+  version      = {1.0.1},
+  doi          = {10.5281/zenodo.2575545},
+  url          = {https://doi.org/10.5281/zenodo.2575545}
+}
+```
+
+---
+
+# Machine readable meta data: Make your data searchable
+
+.left-code[
+```
+project 
+├── data
+│   ├── crime.csv
+│   ├── crime-dictionary.csv 
+│   └── metadata
+│       ├── access.csv
+│       ├── attributes.csv
+│       ├── biblio.csv
+│       ├── creators.csv
+│       └── dataspice.json
+├── data-raw
+│   ├── crime-raw.dat
+│   ├── clean-crime.R
+│   └── other-steps.md
+├── README.md (reference DOI here)
+├── CITATION
+└── LICENSE
+```
+]
+
+.right-plot[
+- Helps ensure data types are preserved.
+- Provides structure allowing data to be indexed and searched online, through services such as google datasets search using JSON-LD.
+- To create appropriate metadata, we recommend metadata generators such as `dataspice` or `codebook`
+- Metadata should be provided in a folder called "metadata", which should be provided for every dataset. 
+]
+
+---
+
+.huge[
+[Example Machine readable meta data: housing data](https://github.com/njtierney/melb-housing-data)
+]
+
+---
+
+# Actually sharing the data
+
+Now that you've created your data folder, you need to **get it somewhere online**
+
+Two options I would like to discuss:
+
+1. Putting the data online
+1. Sharing as an R package
+
+
+---
+class: inverse, center, middle
+# Online repositories: Zenodo &amp; Dryad
+
+---
+
+# Zenodo
+
+.pull-left[
+- Launched in 2013 in a joint collaboration between openAIRE and CERN
+- Free, archival location to deposit datasets
+- File size limit is 50gb for individual files
+- Able to accommodate larger file sizes upon request
+]
+
+---
+
+# Dryad
+
+.pull-left[
+- The Dryad Digital Repository takes data from any field of research, and perform human quality control and assistance of the data
+- Can link data with a journal publication, in exchange for a data publishing fee.
+]
+
+---
+
+# Linking zenodo and GitHub
+
+.large[
+
+You can also link Zenodo with Github
+
+Zenodo updates with new DOI at every "release" (Helps avoid managing many moving pieces)
+
+See this article on github, [making your code citable](https://guides.github.com/activities/citable-code/) (Thanks to [Arfon Smith](https://www.arfon.org/))
+]
+
+---
+
+# Sharing data as an R package
+
+.large[
+"data only" R packages. (e.g., [`nycflights13`](https://github.com/hadley/nycflights13), [`eechidna`](https://docs.ropensci.org/eechidna/), [other Australian datasets](https://ropenscilabs.github.io/OZdatasets/))
+  ]
+  
+.pull-left.large[
+Pros
+
+- installable
+- documentation
+- share data cleaning
+- great for R users
+]
+
+.pull-right.large[
+
+Cons
+
+- Size: ! &gt;= 5Mb (CRAN)
+- Doesn't help others outside R
+]
+
+---
+
+# Sharing data as an R package
+
+.medium[
+- Most (but not all!) data shared as an R package, or with an R package is for teaching purposes
+- Sharing the data together in this way allows you to create a "research compendium", where code + paper + computing environment + data is in one place.
+- See more about this in Karthik Ram's talk: ["How To Make Your Data Analysis Notebooks More Reproducible"](https://github.com/karthik/rstudio2019)
+- Note also that the suggested directory structure for sharing data is based off of an R package
+]
+
+---
+
+# Online "data" journals
+
+.large[
+- Provides familiar mechanism for citation
+- But journals don't yet have a good way to outline how to share data
+- Often looks like a "mini paper" with the methods, and isn't always about the data, but about collection methods.
+- Can link to a Zenodo or Dryad repository.
+]
+
+---
+
+# Online "data" journals
+
+.large[
+Some example data journals:
+
+- Nature: Scientific Data
+- Data in Brief
+- Data
+
+]
 
 ---
 
 # Take homes
+
+.large[
+- You don't have to do every single thing to publish your data
+- Take small steps - get the data somewhere first, add more detail as you go
+]
 
 ---
 
 # Future Directions
 
 .large[
-- More features
-- More features
-- More features
+- Currently working on a proposal for "datadevtools" - a set of developer tools to facilitate sharing data
+- These tools can then be used to assess "shareability" of data
 ]
-
----
-
-# Test
-
-.small[small]
-.
 
 ---
 
 # Thanks
 
-.large.pull-left[
-- So many great people
-- So many great people
-- So many great people
-- So many great people
-]
-
-.large.pull-right[
-- So many great people
-- So many great people
-- So many great people
-- So many great people
+.large[
+- Karthik Ram
+- Miles McBain
+- Anna Kystalli
+- Daniella Lowenberg
+- ACEMS International Mobility Programme
+- Helmsley Charitable Trust
+- Gordon and Betty Moore Foundation
+- Sloan Foundation
 ]
 
 ---
@@ -92,9 +691,16 @@ Put More slides here.
 
 .large[
 - So many things
-- So many things
-- So many things
-- So many things
+]
+
+---
+
+# References
+
+.large[
+- [making your code citable](https://guides.github.com/activities/citable-code/)
+- Stodden 
+- Rowhani-Farid
 ]
 
 ---
@@ -116,7 +722,7 @@ Put More slides here.
 # Learning more
 
 .large[
-<i class="fas  fa-box-open "></i> [package link]()
+<i class="fas  fa-box-open "></i> [datadevtools]()
 
 <i class="fas  fa-link "></i> [talk link]()
 
@@ -133,6 +739,8 @@ Put More slides here.
 
 .vhuge[
 **End.**
+
+
 ]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
