@@ -2,11 +2,10 @@
 
 This is a slide template I have put on github so that I can get started with talks easier.
 
-# Learn more about this talk at [this link](FILL IN HERE)
-
-# Slide available [here](https://bit.ly/FILL-ME-IN)
+# Slide available [here](https://njt-numbat-data.netlify.com/)
 
 <!-- NETLIFY BADGE SHOULD GO HERE-->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4d47be09-e06d-421d-859d-d4822a95733f/deploy-status)](https://app.netlify.com/sites/njt-numbat-data/deploys)
 
 # Take home messages 
 
