@@ -147,13 +147,11 @@ It's often really available to the authors
 # Rowhani-Farid & Barnett, 2016
 
 .large[
-Out of 160 randomly sampled BMJ papers
+Out of 160 randomly sampled BMJ papers:
 
-3 included data in the paper
-
-Only 7/157 research articles shared their data sets
-
-For 21 clinical trials bound by the BMJ data sharing policy, 24% shared data
+- 3 included data in the paper
+- 7/157 research articles shared their data sets
+- For 21 clinical trials bound by the BMJ data sharing policy, 24% shared data
 ]
 ---
 
@@ -265,7 +263,7 @@ and is under constant development I prefer not to share this code
 
 # Stodden, Seiler and Ma, 2018
 
-.large[
+.medium[
 `r emo::ji("tada")`
 
 > If you go to [URL redacted], under the publications, I have a link
@@ -324,7 +322,7 @@ There are indeed good reasons to not share data:
 .large[
 "If you can't do something right, don't do it"
 
-- This ^^ is wrong - you should at least provide something!
+- This ^^ is wrong - you **can** provide something, even if it is just simulated data.
 
 - Sharing data (in most cases) has a net positive benefit
 ]
@@ -335,7 +333,9 @@ There are indeed good reasons to not share data:
 
 .large[
 
-It shouldn't be a wall or a mountain that we need to climb. These require special tools, and knowledge of how to use them.
+It can feel like a wall or a mountain we need to climb. 
+
+These require special tools and knowledge.
 
 It should instead be an "on-ramp"
 
@@ -519,8 +519,10 @@ project
 .right-plot[
 
 - Code used to clean and tidy the raw data. 
+- `clean-crime.R`
 - Ideally involves only scripted languages
 - If other practical steps were taken to clean up the data, these should be recorded in a plain text or markdown file.
+- `other-steps.md`
 
 ]
 
@@ -546,12 +548,14 @@ project
 .right-plot[
 
 - Data + license clearly establishes how everyone to modify, use, and share data. 
-- Two licenses that are well suited for data sharing are:
+- Two licenses well suited for data sharing:
 
 1. CCBY: enforce attribution and credit required, no warranty.
 2. CC0: public domain. No ownership or warranty
 
-- Provide a LICENSE or LICENSE.md file with entire license in the top level of directory.
+- Provide LICENSE file with entire license in the top level of directory.
+- `use_cc0_license()`
+- `use_ccby_license()`
 ]
 
 
@@ -658,7 +662,7 @@ class: inverse, center, middle
 
 # Zenodo
 
-.pull-left[
+.large[
 - Launched in 2013 in a joint collaboration between openAIRE and CERN
 - Free, archival location to deposit datasets
 - File size limit is 50gb for individual files
@@ -669,7 +673,7 @@ class: inverse, center, middle
 
 # Dryad
 
-.pull-left[
+.large[
 - The Dryad Digital Repository takes data from any field of research, and perform human quality control and assistance of the data
 - Can link data with a journal publication, in exchange for a data publishing fee.
 ]
@@ -780,13 +784,6 @@ Some example data journals:
 - Sloan Foundation
 ]
 
----
-
-# Resources
-
-.large[
-- So many things
-]
 
 ---
 
@@ -794,8 +791,8 @@ Some example data journals:
 
 .large[
 - [making your code citable](https://guides.github.com/activities/citable-code/)
-- Stodden 
-- Rowhani-Farid
+- [Stodden et al](https://www.pnas.org/content/115/11/2584)
+- [Rowhani-Farid  & Barnett](https://bmjopen.bmj.com/content/6/10/e011784.abstract)
 ]
 
 ---
@@ -817,9 +814,9 @@ Some example data journals:
 # Learning more
 
 .large[
-`r icon::fa_box_open() ` [datadevtools]()
+`r icon::fa_newspaper() ` [paper (released soon)](https://github.com/karthik/ddd)
 
-`r icon::fa('link')` [talk link]()
+`r icon::fa('link')` [talk]()
 
 `r icon::fa_twitter()` nj_tierney
 
