@@ -1,25 +1,39 @@
-# Nick's Slide Template
-
-This is a slide template I have put on github so that I can get started with talks easier.
-
-# Slide available [here](https://njt-numbat-data.netlify.com/)
-
+# A Realistic Guide to Making Data Available Alongside Code to Improve Reproducibility.
 <!-- NETLIFY BADGE SHOULD GO HERE-->
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4d47be09-e06d-421d-859d-d4822a95733f/deploy-status)](https://app.netlify.com/sites/njt-numbat-data/deploys)
 
-# Take home messages 
-
-1. Point one
-1. Point two
-1. Point three
 
 # Abstract
 
+Data makes science possible. Sharing data improves visibility, and makes the research process transparent. This increases trust in the work, and allows for independent reproduction of results. However, a large proportion of data from published research is often only available to the original authors. Despite the obvious benefits of sharing data, and scientists' advocating for the importance of sharing data, most advice on sharing data discusses its broader benefits, rather than the practical considerations of sharing. This paper provides practical, actionable advice on how to actually share data alongside research. The key message is sharing data falls on a continuum, and entering it should come with minimal barriers.
 
+# Slide available [here](https://njt-numbat-data.netlify.com/)
+
+# Working paper available [here](https://github.com/karthik/ddd)
+
+# Take home messages 
+
+- You don't have to do every single thing to publish your data
+- Take small steps - get the data somewhere first, add more detail as you go
+- Try and get a DOI from a service like Zenodo or Dryad
 
 # Thanks
 
+- Karthik Ram
+- Miles McBain
+- Anna Kystalli
+- Daniella Lowenberg
+- ACEMS International Mobility Programme
+- Helmsley Charitable Trust
+- Gordon and Betty Moore Foundation
+- Sloan Foundation
+
 # Resources
+
+- [making your code citable](https://guides.github.com/activities/citable-code/)
+- [Stodden et al](https://www.pnas.org/content/115/11/2584)
+- [Rowhani-Farid  & Barnett](https://bmjopen.bmj.com/content/6/10/e011784.abstract)
+
 
 # Colophon
 
@@ -32,7 +46,7 @@ This is a slide template I have put on github so that I can get started with tal
   - Body text font is **Montserrat**
   - Code font is **Fira Mono**
 
-# bio
+# Bio
 
 Dr. Nicholas Tierney (PhD. Statistics, BPsySci (Honours)) is a Research
 Fellow in Statistics at Monash University, working with Professors
